@@ -12,6 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const board = Array(9).fill(null); // to track the state of the board
 
   squares.forEach((square, index) => {
+    //---Exercise 3 requirement: add click event listener to each cell
+    square.addEventListener("mouseover", () => {
+      square.classList.add("hover");
+    });
+    square.addEventListener("mouseout", () => {
+      square.classList.remove("hover");
+    });
+  });
+
+  squares.forEach((square, index) => {
     square.addEventListener("click", () => {
       if (board[index] !== null) return; // already taken
       board[index] = currentPlayer;
@@ -22,4 +32,4 @@ document.addEventListener("DOMContentLoaded", () => {
       statusE1.textContent = `Player ${currentPlayer}'s turn`;
     });
   })});
-  
+
