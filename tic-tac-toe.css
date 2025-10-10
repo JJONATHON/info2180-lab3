@@ -64,7 +64,7 @@ h1 span {
   color: var(--green);
   border-top: 4px solid var(--green);
   font-weight: bold;
-}
+}                     
 
 #status.you-won::before {
   content: '🎉';
