@@ -46,6 +46,7 @@ h1 span {
   display: grid;
   grid-template-columns: repeat(3, 150px);
   grid-gap: 20px;
+  margin-top: 20px;
 }
 
 #status {
@@ -64,7 +65,7 @@ h1 span {
   color: var(--green);
   border-top: 4px solid var(--green);
   font-weight: bold;
-}                     
+}
 
 #status.you-won::before {
   content: '🎉';
@@ -80,8 +81,7 @@ h1 span {
 
 .square {
   background: white;
-  border: 1px solid var(--grey);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #cbd5e0;
   border-radius: 10px;
   width: 150px;
   height: 150px;
